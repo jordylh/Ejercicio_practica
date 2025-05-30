@@ -8,178 +8,213 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #f8f8f8;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
 </head>
 
 <body>
 
     <header>
-        <div class="text-center text-white " style="background-color: #122548;">
-            <br>
-            <h2>Call Today for a Free Consultation <a href="#" class="text-warning" style="text-decoration: none;">
-                    (312)-663-8576</a></h3>
-                <br>
+        <div class="row justify-content-center text-center" style="background-color: #122548;">
+            <div class="col-12 mt-4 mb-4">
+                <h2 class="">Call Today for a Free Consultation <a href="#"
+                        style="text-decoration: none;color: #c99302;">
+                        (312)-663-8576</a></h2>
+            </div>
         </div>
-        <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="img/powel.svg" alt="Powell and Pisman" style="width: 50%; height:80% ;">
-            </a>
-            <nav class="navbar navbar-expand-lg navbar-light bg-">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Brain injury</a></li>
-                                    <li><a class="dropdown-item" href="#">Catastrophic Injury</a></li>
-                                    <li>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-wrap justify-content-center py-3 mb-0  border-bottom ">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <img src="img/powel.svg" alt="Powell and Pisman" style="width: 50%; height:80% ;">
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            About
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Brain injury</a></li>
+                                            <li><a class="dropdown-item" href="#">Catastrophic Injury</a></li>
+                                            <li>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Practice Areas
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Brain injury</a></li>
-                                    <li><a class="dropdown-item" href="#">Catastrophic Injury</a></li>
-                                    <li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Practice Areas
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Brain injury</a></li>
+                                            <li><a class="dropdown-item" href="#">Catastrophic Injury</a></li>
+                                            <li>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Vehicle Accidents
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Vehicle Accidents
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Cities Served
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cities Served
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Resources
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Español</a>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Español</a>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
-    <section>
-        <img src="img/pexels-creative-vix-9754.jpg" alt=""
-            style="position:absolute; width:100%; height:60%; z-index:-1;">
-        <div class="container text-left text-white">
-            <br>
-            <br>
-            <br>
-            <br>
+    <section class="text-white"
+        style="background-image: url('img/pexels-creative-vix-9754.jpg'); background-size: cover; background-position: center; height: 60vh; margin-top: 0;">
+        <div class="container text-white ">
             <div class="row">
-                <h4>
-                    More Lawyer. Less Fee.
-                </h4>
+                <div class="col-12 col-md-4 mt-5">
+                    <h4>More Lawyer. Less Fee.</h4>
+                </div>
             </div>
             <div class="row">
-                <h1>
-                    Chicago Personal Injury Lawyer
-                </h1>
+                <div class="col-12 col-md-4">
+                    <h1>Chicago Personal Injury Lawyer</h1>
+                </div>
             </div>
             <div class="row">
-                <h4>
-                    35+ Years of Combined Experience.
-                    <br>
-                    $250+ Million Won for Our Clients.
-                </h4>
+                <div class=" col-12 col-md-3">
+                    <h4>35+ Years of Combined Experience.<br>$250+ Million Won for Our Clients.</h4>
+                </div>
             </div>
-            <br>
             <div class="row">
-                <h4>
-                    <a href="#" class="btn btn-warning text-white"> CLICK FOR A FREE CASE REVIEW</a>
-                </h4>
+                <div class="col-12 col-md-4 mb-5">
+                    <a href="#" class="btn btn-warning text-white mt-3">CLICK FOR A FREE CASE REVIEW</a>
+                </div>
             </div>
-            <br>
-            <br>
-            <br>
+
         </div>
     </section>
     <section class="bg-light">
-        <div class="container text-center px-4">
-            <br>
-            <br>
-            <br>
-            <h5 class="text-warning">Available 24/7</h5>
-            <h1>Get a free Consultation!</h1>
-            <br>
-            <br>
-
-            <form>
-                <div class="row gx-5">
-                    <div class="col ">
+        <div class="container text-center ">
+            <div class="row justify-content-center mt-5">
+                <div class="col-5 ">
+                    <h5 class="text-warning">Available 24/7</h5>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-8" style="color: #122548;">
+                    <h1>Get a free Consultation!</h1>
+                </div>
+            </div>
+            <form class="mt-3">
+                <div class="row">
+                    <div class="col-12 col-md-3">
                         <div class="p-3">
                             <input type="text" class="form-control" aria-describedby="Name" placeholder="Name">
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-12 col-md-3">
                         <div class="p-3 ">
                             <input type="email" class="form-control" aria-describedby="Email" placeholder="Email">
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-12 col-md-3">
                         <div class="p-3 ">
                             <input type="email" class="form-control" aria-describedby="Phone" placeholder="Phone">
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-12 col-md-3">
                         <div class="p-3 ">
                             <input type="email" class="form-control" aria-describedby="Zip Code" placeholder="Zip Code">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col ">
+                    <div class="col-12">
                         <div class="p-3">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                 placeholder="Describe your case"></textarea>
@@ -189,50 +224,57 @@
 
                 </div>
             </form>
-            <br>
-            <a href="#" class="btn btn-warning text-white">Go somewhere</a>
-            <br>
-            <div class="row">
-                <div class="col ">
-                    <div class="p-3">
-                        <h5>There’s No Obligation</h5>
-                    </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-4">
+                    <a href="#" class="btn btn-warning text-white ">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <div class="col-4">
+                    <h5 style="color: #122548;">There’s No Obligation</h5>
                 </div>
             </div>
             <br>
             <br>
         </div>
     </section>
-    <section>
-        <div class="container ">
-            <br>
-            <br>
-            <br>
-            <h1 class="text-warning text-left">Chicago Injury Attorneys Who Will Put You First</h1>
-            <br>
-            <div class="row text-left">
-                <div class="col">
-                    Were you hurt due to someone else’s negligent or wrongful behavior in Chicago, IL? If so, contact
-                    Powell and Pisman Injury Lawyers at (312) 525-9968 for a free initial consultation. Our experienced
-                    Chicago personal injury attorneys are here to do everything in our power to aid in your physical,
-                    mental
-                    , and financial recovery.
+    <section style="background-color: white;">
+        <div class="container col-9 ">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h1 class="text-warning text-left">Chicago Injury Attorneys Who Will Put You First</h1>
                 </div>
-                <div class="col">
-                    Since our firm’s founding, our legal team has successfully represented thousands of clients after
-                    motor
-                    vehicle accidents, slips and falls, assaults, and more. With 35 years of combined experience, we’ve
-                    secured over $250 million for personal injury victims. We are the advocates you’ll want on your side
-                    as you fight for fair compensation for your damages.
-
+            </div>
+            <div class="row text-left mt-4">
+                <div class="col-12 col-md-6">
+                    <p class="text-secondary">
+                        Were you hurt due to someone else’s negligent or wrongful behavior in Chicago, IL? If so,
+                        contact
+                        Powell and Pisman Injury Lawyers at (312) 525-9968 for a free initial consultation. Our
+                        experienced
+                        Chicago personal injury attorneys are here to do everything in our power to aid in your
+                        physical,
+                        mental
+                        , and financial recovery.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="text-secondary">
+                        Since our firm’s founding, our legal team has successfully represented thousands of clients
+                        after
+                        motor
+                        vehicle accidents, slips and falls, assaults, and more. With 35 years of combined experience,
+                        we’ve
+                        secured over $250 million for personal injury victims. We are the advocates you’ll want on your
+                        side
+                        as you fight for fair compensation for your damages.
+                    </p>
                 </div>
 
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="row text-center">
-                <div class="col">
+            <div class="row text-center mt-5 ">
+                <div class="col-12 mb-5">
                     <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -262,53 +304,45 @@
                 </div>
 
             </div>
-            <br>
-            <br>
         </div>
     </section>
     <section class="bg-light">
         <div class="container text-center px-4">
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col">
+            <div class="row mt-5">
+                <div class="col-12 mt-5">
                     <h1 class="text-warning">Why Should I Hire Powell & Pisman Injury Lawyers To Handle My Chicago
                         Personal Injury Case?</h1>
                 </div>
             </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <br>
-                            <h5 class="card-title">We Have Over 35 years of Combined Experience Representing Clients
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 mt-5">
+                    <div class="card shadow h-100 w-100">
+                        <div class="card-title mt-5">
+                            <h5 style="color: #122548;">We Have Over 35 years of Combined Experience Representing
+                                Clients
                             </h5>
-                            <br>
-                            <p>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-secondary ">
                                 We have 35 years of combined experience handling all types of personal injury cases.
                                 We’re here to fight for the maximum compensation you deserve.
-                            </p>
-                            <p>
-                                <br>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <br>
-                            <h5 class="card-title">We’ve Recovered Over $250 Million in Settlements and Verdicts
+                <div class="col-12 col-md-6 mt-5">
+                    <div class="card shadow h-100 w-100">
+                        <div class="card-title mt-5">
+                            <h5 style="color: #122548;">We’ve Recovered Over $250 Million in Settlements and Verdicts
                             </h5>
-                            <br>
-                            <p>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="text-secondary mt-4">
                                 Since we started our firm, our successful legal team has won over 75 settlements or
                                 verdicts of at least $1 million.on behalf of injury victims and their families.
                             </p>
-                            <p>
+                            <p class="text-secondary">
                                 Now, we’re here to stand by your side and do everything we can to get the money
                                 you need and deserve.
                             </p>
@@ -316,36 +350,36 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow">
+            <div class="row mt-4">
+                <div class="col-12 col-md-6 mt-5 mb-5">
+                    <div class="card shadow h-100 w-100">
+                        <div class="card-title mt-5">
+                            <h5 style="color: #122548;">Our Personal Injury Lawyer Will Fight While You Recover</h5>
+                        </div>
                         <div class="card-body">
-                            <br>
-                            <h5 class="card-title">Our Personal Injury Lawyer Will Fight While You Recover
-                            </h5>
-                            <br>
-                            <p>
+
+                            <p class="text-secondary">
                                 Injuries are difficult enough. The last thing you want is a lengthy insurance battle.
                             </p>
-                            <p>
+                            <p class="text-secondary">
                                 Your attorney will handle every aspect of the insurance and legal process. That way,
                                 you can focus on your recovery while knowing your financial interests are protected.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <br>
-                            <h5 class="card-title">Providing Access to Respected Experts
+                <div class="col-12 col-md-6 mt-5 mb-5">
+                    <div class="card shadow h-100 w-100">
+                        <div class="card-title mt-5">
+                            <h5 style="color: #122548;">Providing Access to Respected Experts
                             </h5>
-                            <br>
-                            <p>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="text-secondary">
                                 Most personal injury cases can quickly become complicated.
                             </p>
-                            <p>
+                            <p class="text-secondary">
                                 Experts in medicine, accident reconstruction, economics, and
                                 life planning can all help you prove your case. An experienced
                                 attorney will have contacts with respected experts who can help
@@ -355,79 +389,225 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
         </div>
     </section>
     <section class="" style="background-color: #122548; ">
         <div class="container text-center px-4">
-            <br>
-            <br>
-            <br>
-            <h2 class="text-white">"</h5>
-                <h1 class="text-warning">What Should I Do After an Accident?</h1>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <div id="carouselExample" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card " style="background-color: #122548; border-style: none;">
-                                        <div class="card-body">
-                                            <p class="text-white">
-                                                I would definetly recommend Paul and Steve to anyone. They has
-                                                <br>
-                                                been good to me, my famyly and friends. They worked very closely
-                                                <br>
-                                                with us whilehandling our cases and made sure that we undestood
-                                                <br>
-                                                exactly what was going on
-                                            </p>
-                                            <p>
-                                            <h5 class="text-warning">Romane V</h5>
-                                            </p>
-                                        </div>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h2 class="text-white">"</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-warning">What Should I Do After an Accident?</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 mt-5 mb-5">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card " style="background-color: #122548; border-style: none;">
+                                    <div class="card-body">
+                                        <p class="text-white">
+                                            I would definetly recommend Paul and Steve to anyone. They has
+                                            <br>
+                                            been good to me, my famyly and friends. They worked very closely
+                                            <br>
+                                            with us whilehandling our cases and made sure that we undestood
+                                            <br>
+                                            exactly what was going on
+                                        </p>
+                                        <p>
+                                        <h5 class="text-warning">Romane V</h5>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="card " style="background-color: #122548; border-style: none;">
-                                        <div class="card-body">
-                                            <p class="text-white">
-                                                This comapny has done an amazing job with my case. And i would
-                                                <br>
-                                                definetly recommend them to people I know that's having hard
-                                                <br>
-                                                time with getting the right attorney!
-                                            </p>
-                                            <p>
-                                            <h5 class="text-warning">Brittney R.</h5>
-                                            </p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card " style=" background-color: #122548; border-style: none;">
+                                    <div class="card-body">
+                                        <p class="text-white">
+                                            This comapny has done an amazing job with my case. And i would
+                                            <br>
+                                            definetly recommend them to people I know that's having hard
+                                            <br>
+                                            time with getting the right attorney!
+                                        </p>
+                                        <p>
+                                        <h5 class="text-warning">Brittney R.</h5>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" pt-5" style="background-color: white;">
+        <div class="row justify-content-center mt-5">
+            <div class="col-6">
+                <h4 class="text-warning text-center">
+                    Case Results
+                </h4>
+            </div>
+        </div>
+        <div class="row  justify-content-center ">
+            <div class="col-6 mb-5">
+                <h1 class="text-secondary text-center">
+                    $250+ million won, including over 75
+                    settlements & verdicts of at least $1 million
+                </h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center ">
+            <div class="col-12">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper mb-5 ">
+                        <div class="swiper-slide mb-5">
+                            <div class="card col-10 bg-light" >
+                                <div class="card-body text-start ">
+                                    <div class="container pt-5">
+                                        <div class="row offset-1 ">
+                                            <div class="col-10 ">
+                                                <h3 class="text-warning">Car Accident</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <h2 class="text-primary text-left">$2,000,000</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <p class="text-secondary">
+                                                    Facing an inadequate insurance offer post.crash and post-surgery,
+                                                    our
+                                                    diligence
+                                                    secured our client´s rightful compensation
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                        </div>
+                        <div class="swiper-slide mb-5">
+                            <div class="card col-10 bg-light" >
+                                <div class="card-body text-start ">
+                                    <div class="container pt-5">
+                                        <div class="row offset-1 ">
+                                            <div class="col-10 ">
+                                                <h3 class="text-warning">Car Accident</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <h2 class="text-primary text-left">$2,000,000</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <p class="text-secondary">
+                                                    Facing an inadequate insurance offer post.crash and post-surgery,
+                                                    our
+                                                    diligence
+                                                    secured our client´s rightful compensation
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-5">
+                            <div class="card col-10 bg-light" >
+                                <div class="card-body text-start ">
+                                    <div class="container pt-5">
+                                        <div class="row offset-1 ">
+                                            <div class="col-10 ">
+                                                <h3 class="text-warning">Car Accident</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <h2 class="text-primary text-left">$2,000,000</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row offset-1 ">
+                                            <div class="col-10">
+                                                <p class="text-secondary">
+                                                    Facing an inadequate insurance offer post.crash and post-surgery,
+                                                    our
+                                                    diligence
+                                                    secured our client´s rightful compensation
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination "></div>
                 </div>
-                <br>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5 mb-5">
+            <div class="col-4 mb-5 ">
+                <button type="button" class="btn btn-warning text-light col-12">SEE ALL CASE RESULTS</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container ">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-4">
+                    <h2 class="col-12" style="color:#122548;">Our Chicago, IL Law Office</h2>
+                    <p class="col-12 fs-5 text-secondary">Visit our personal injury law office near you to meet with
+                        one of our trusted attorneys.</p>
+                    <h3 class="col-12" style="color: black;">Powell and Pisman Injury Lawyers – Law Office Address
+                    </h3>
+                    <p class="col-12 text-secondary fs-5">
+                        875 N Dearborn St 4th Floor
+                        Chicago, IL 60610
+                        Hours: Open 24 hours daily
+                    </p>
+                    <a href="#" class="text-warning fs-5" style="text-decoration: none;">Get Directions</a>
+                    <h3 class="col-12  "><a href="#" class="text-warning" style="text-decoration: none;">(312)-525-9968
+                        </a></h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1484.8668930687074!2d-87.629081!3d41.898582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34d93695bd5%3A0x53351041c50ffa37!2sPowell%20and%20Pisman%20Injury%20Lawyers%20Chicago!5e0!3m2!1sen!2smx!4v1748597307739!5m2!1sen!2smx"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
         </div>
     </section>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 text-white"
         style="background-color: #122548; text-decoration: none;">
-        <p class="col-md-4 offset-md-1 text-body-secondary">
+        <p class="col-md-3 offset-md-1 text-body-secondary">
             Law Rank.
         </p>
-        <ul class="nav col-md-6 justify-content-end">
+        <ul class="nav col-md-7 justify-content-end">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">© 2025 - Powell and Pisman Injury Lawyers
                     | All Rights Reserved </a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
@@ -437,11 +617,22 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Disclaimer</a></li>
         </ul>
     </footer>
+
+    <!-- Boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
