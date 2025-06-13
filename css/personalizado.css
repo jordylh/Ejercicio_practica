@@ -47,6 +47,20 @@ body {
     background-size: cover;
     background-position: center;
     margin-top: 0;
+    color:white; 
+}
+
+.seccion1 a{
+    background-color: orange;
+    color: white;
+}
+
+.seccion2 h1{
+    color: orange;
+}
+
+.seccion2 p{
+    color: gray;
 }
 
 .seccion4 h2 {
