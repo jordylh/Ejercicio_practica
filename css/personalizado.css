@@ -1,136 +1,305 @@
- 
-.top-header{
-    background-color: #122548;
-}
+  header img {
+      width: 40%;
+  }
 
-html,
-body {
-    position: relative;
-    height: 100%;
-}
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: visible;
+  }
 
-body {
-    background: #f8f8f8;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
+  .navegacion {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      overflow: visible;
+  }
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
+  header .navegacion a:hover {
+      text-decoration: none;
+      color: orange;
+  }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-}
+  header .navegacion ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      font-size: 30px;
+      height: 100%;
+  }
 
-.swiper-slide img {
-    display: block;
-    width: 10%;
-    height: 100%;
-    margin:auto;
-    object-fit: contain;
-}
+  header .navegacion ul li {
+      position: relative;
+  }
 
-.seccion1 {
-    background-image: url('../img/pexels-creative-vix-9754.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-top: 0;
-    color:white; 
-}
+  header .navegacion ul li a {
+      display: block;
+      padding: 10px 15px;
+      color: #122548;
+      text-decoration: none;
+      transition: all 0.2s ease;
+  }
 
-.seccion1 a{
-    background-color: orange;
-    color: white;
-}
+  header .navegacion ul li a:hover {
+      background-color: white;
+  }
 
-.seccion2 h1{
-    color: orange;
-}
+  header .navegacion ul li ul {
+      position: absolute;
+      right: 0;
+      width: 300px;
+      background-color: white;
+      display: none;
+      height: auto;
+      overflow: visible;
+  }
 
-.seccion2 p{
-    color: gray;
-}
+  header .navegacion ul li ul li {
+      width: 100%;
+  }
 
-.seccion4 h2 {
-    color: #122548;
-}
+  header .navegacion ul li ul li a {
+      font-size: 15px;
+      text-transform: capitalize;
+  }
 
-.seccion4 h3 {
-    color: black;
-}
+  header .navegacion ul li ul li ul {
+      position: absolute;
+      top: 0;
+      right: 300px;
+  }
 
-a {
-    text-decoration: none;
-    color: orange;
-}
+  header .navegacion ul li:hover>ul {
+      display: block;
+  }
 
-.accordion-button,
-.accordion-body {
-    background-color: #f8f9fa;
-}
+  html,
+  body {
+      padding-top: 160px;
+      position: relative;
+      height: 100%;
+  }
 
-.seccion6 {
-    height: 60vh;
-    margin-top: 0;
-}
+  body {
+      background: #f8f8f8;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+  }
 
-.seccion6 a {
-    color: white;
-}
+  .naranja {
+      color: orange;
+  }
 
-.fondo-img-seccion6 {
-    background-image: url('../img/handshake-5760544_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
+  .fondo-naranja {
+      background-color: orange;
+  }
 
-.fondo-color-seccion6 {
-    background-color: rgba(255, 165, 0, 0.5);
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-}
+  .fondo-azuloscuro {
+      background-color: #122548;
+  }
 
-.seccion6-body {
-    z-index: 3;
-}
+  .seccion1 {
+      background-image: url('../img/pexels-creative-vix-9754.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-top: 0;
+      color: white;
+  }
 
-footer {
-    background-color: #122548;
-    text-decoration: none;
-}
+  .seccion1 a {
+      background-color: orange;
+      color: white;
+  }
 
-.seccion9 {
-    background-image: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-top: 0;
-}
+  .seccion2 p {
+      color: gray;
+  }
 
+  .swiper-wrapper-container {
+      display: flex;
+      align-items: center;
+  }
 
-.seccion10 iframe{
-    height: 100%;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-}
+  .swiper-tamaño {
+      flex: 10;
+      max-width: auto;
+      max-height: auto;
+  }
 
-svg{
-    width: 20px;
-    height: 20px;
-}
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+  }
+
+  .swiper-slide img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+  }
+
+  .seccion2 .swiper-button-prev::after {
+      display: none;
+  }
+
+  .seccion2 .swiper-button-prev {
+      flex: 1;
+      color: orange;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' fill='orange' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      position: static;
+      max-width: auto;
+      max-height: auto;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .seccion2 .swiper-button-next::after {
+      display: none;
+  }
+
+  .seccion2 .swiper-button-next {
+      flex: 1;
+      color: orange;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='orange' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      position: static;
+      max-width: auto;
+      max-height: auto;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .seccion2 .swiper-button-next {
+      color: orange;
+  }
+
+  .swiper-pagination {
+      color: orange;
+      --swiper-theme-color: #FFA500;
+  }
+
+  .swiper-tamaño2 {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+  }
+
+  .seccion3 .mySwiper2 {
+      overflow: visible;
+      padding: 0 32px;
+  }
+
+  .seccion3 .swiper-slide {
+      width: auto;
+  }
+
+  .seccion4 h2 {
+      color: #122548;
+  }
+
+  .seccion4 h3 {
+      color: black;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: orange;
+  }
+
+  .icon-link {
+      color: white;
+  }
+
+  .icon-link:hover {
+      color: white;
+  }
+
+  .accordion-button,
+  .accordion-body {
+      background-color: #f8f9fa;
+  }
+
+  .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='orange' class='bi bi-plus-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+  }
+
+  .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='orange' class='bi bi-dash-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+  }
+
+  .seccion6 {
+      height: 60vh;
+      margin-top: 0;
+  }
+
+  .seccion6 a {
+      color: white;
+  }
+
+  .separacion {
+      letter-spacing: 0.25em;
+  }
+
+  .fondo-img-seccion6 {
+      background-image: url('../img/handshake-5760544_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+  }
+
+  .fondo-color-seccion6 {
+      background-color: rgba(255, 165, 0, 0.5);
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+  }
+
+  .seccion6-body {
+      z-index: 3;
+  }
+
+  footer {
+      text-decoration: none;
+  }
+
+  .seccion9 {
+      background-image: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-top: 0;
+  }
+
+  .seccion10 iframe {
+      height: 100%;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+
+  svg {
+      width: 20px;
+      height: 20px;
+  }
